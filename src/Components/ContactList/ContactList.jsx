@@ -11,10 +11,10 @@ const ContactList = ({contacts}) => {
         <h2>Contact List</h2>
         <input placeholder='Search' onChange={(e) => setFilteredText(e.target.value)}/>
         <ul id="list">
-            {filteredData.map((item, key) => (
+            {filteredData && filteredData.map((item, key) => (
                 <li key={key}>
-                    <span>{item.fullName}</span>
-                    <span>{item.phoneNumber}</span>
+                    <span>{item.full_name}</span>
+                    <span>{item.phone_number}</span>
                 </li>
             ))}
         </ul>

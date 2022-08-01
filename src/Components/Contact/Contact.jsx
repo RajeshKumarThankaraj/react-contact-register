@@ -4,9 +4,9 @@ import ContactList from '../ContactList/ContactList'
 
 const Contact = () => {
     const [contacts, setContacts] = useState([
-        {fullName: "ABC", phoneNumber: "123456"},
-        {fullName: "BCD", phoneNumber: "567890"},
-        {fullName: "CDE", phoneNumber: "654321"},
+        {full_name: "ABC", phone_number: "123456"},
+        {full_name: "BCD", phone_number: "567890"},
+        {full_name: "CDE", phone_number: "654321"},
     ]);
   return (
     <div id="container">
